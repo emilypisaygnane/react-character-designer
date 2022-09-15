@@ -1,11 +1,17 @@
-export default function Display({ topCount, bottomCount, shoeCount }) {
+export default function Display({ topCount, bottomCount, shoeCount, catchphrases }) {
   return (
     <div className="display">
-      <p>You have changed the head ${topCount} times, 
-         the body ${bottomCount} times,
-         and the pants ${shoeCount} times. 
-         And nobody can forget your character's classic catchphrases:
+      <p>You have changed your top ${topCount} times, so fab 
+         you have switched out your bottoms ${bottomCount} times, 
+         and changed your shoes ${shoeCount} times. LOVE IT! 
+         Lastly, do not forget about your positive affirmation before you leave.
       </p>
+      <h3>Your Positive Affirmation:</h3>
+      <ul>
+        {catchphrases.map((catchphrase) => (
+          <li key={catchphrase}>{catchphrase}</li>
+        ))}
+      </ul>
     </div>
   );
 }
