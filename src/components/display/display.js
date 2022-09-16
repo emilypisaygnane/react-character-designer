@@ -1,3 +1,5 @@
+import '../Display/display.css'
+
 export default function Display({ topCount, bottomCount, shoeCount, catchphrases }) {
   return (
     <div className="display">
@@ -8,8 +10,8 @@ export default function Display({ topCount, bottomCount, shoeCount, catchphrases
       </p>
       <h3>Your Positive Affirmation:</h3>
       <ul>
-        {catchphrases.map((catchphrase) => (
-          <li key={catchphrase}>{catchphrase}</li>
+        {/* {catchphrases.map((catchphrase) => (
+          <li key={catchphrase}>{catchphrase}</li> */}
         ))}
       </ul>
     </div>
