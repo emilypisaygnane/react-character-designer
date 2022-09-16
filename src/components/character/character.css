@@ -1,0 +1,40 @@
+.character {
+    display: grid;
+    grid-template-rows: 15% 25% 25% 35%;
+    height: 100%;
+    min-height: 0;
+    gap: 0px 0px;
+    grid-template-areas:
+      'title'
+      'head'
+      'body'
+      'bottoms';
+    max-width: 550px;
+    align-items: center;
+  }
+  .title {
+    grid-area: title;
+    font-size: 50px;
+    margin-bottom: -50px;
+  }
+  
+.tops {
+    grid-area: head;
+    max-height: 225px;
+    position: relative;
+    right: -60px;
+    margin-bottom: 45px;
+  }
+  
+  .bottoms {
+    grid-area: body;
+    max-height: 400px;
+    margin-bottom: 65px;
+  }
+  
+  .shoes {
+    grid-area: bottoms;
+    max-height: 425px;
+    right: 35px;
+    position: relative;
+  }

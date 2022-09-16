@@ -37,9 +37,9 @@ export default function Controls({
           setBottomCount((prevState) => prevState + 1);
         }}
       >
-        <option default value="denim-bottom">Light Wash Denim</option>
-        <option default value="leather-bottom">Leather Pants</option>
-        <option default value="skirt-bottom">Brown Satin Skirt</option>
+        <option value="denim">Light Wash Denim</option>
+        <option value="leather">Leather Pants</option>
+        <option value="skirt">Brown Satin Skirt</option>
       </select>
       <label>Shoes</label>
       <select
@@ -49,9 +49,9 @@ export default function Controls({
           setShoeCount((prevState) => prevState + 1);
         }}
       >
-        <option default value="cowgirl-shoe">Cowgirl Boot</option>
-        <option default value="sparkle-shoe">Sparkly Heel</option>
-        <option default value="heel-shoe">Black Heel</option>
+        <option value="cowgirl">Cowgirl Boot</option>
+        <option value="sparkle">Sparkly Heel</option>
+        <option value="heel">Black Heel</option>
       </select>
     </div>
   );
