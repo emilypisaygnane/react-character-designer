@@ -13,7 +13,7 @@ export default function Main() {
   const [bottomCount, setBottomCount] = useState(0);
   const [shoe, setShoe] = useState('');
   const [shoeCount, setShoeCount] = useState(0);
-  const [catchphrases, setCatchphrases] = userState[];
+  const [catchphrases, setCatchphrases] = useState([]);
   const [currentCatchphrase, setCurrentCatchphrase] = useState('');
 
   return (
