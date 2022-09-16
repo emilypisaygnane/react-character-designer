@@ -16,7 +16,7 @@ export default function Controls({
 }) {
   return (
     <div className='control'>
-      <h1>Get Ready to Take on The Day!</h1>
+      <h1>Time to get ready!</h1>
       <label>Top</label>
       <select
         value={top} 

@@ -6,11 +6,12 @@
     gap: 0px 0px;
     grid-template-areas:
       'title'
-      'head'
-      'body'
-      'bottoms';
+      'tops'
+      'bottoms'
+      'shoes';
     max-width: 550px;
     align-items: center;
+
   }
   .title {
     grid-area: title;
@@ -19,22 +20,22 @@
   }
   
 .tops {
-    grid-area: head;
-    max-height: 225px;
+    grid-area: tops;
+    max-height: 100px;
     position: relative;
     right: -60px;
     margin-bottom: 45px;
   }
   
   .bottoms {
-    grid-area: body;
-    max-height: 400px;
+    grid-area: bottoms;
+    max-height: 200px;
     margin-bottom: 65px;
   }
   
   .shoes {
-    grid-area: bottoms;
-    max-height: 425px;
+    grid-area: shoes;
+    max-height: 100px;
     right: 35px;
     position: relative;
   }
