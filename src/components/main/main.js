@@ -4,7 +4,7 @@ import Display from '../display/display';
 import Character from '../Character/character';
 import background from '../background/background.png';
 import Controls from '../Control/control';
-// import Catchphrase from
+import Catchphrase from '../catchphrase/catchphrase';
 
 export default function Main() {
   const [top, setTop] = useState('');
@@ -13,6 +13,8 @@ export default function Main() {
   const [bottomCount, setBottomCount] = useState(0);
   const [shoe, setShoe] = useState('');
   const [shoeCount, setShoeCount] = useState(0);
+  const [catchphrases, setCatchphrases] = userState[];
+  const [currentCatchphrase, setCurrentCatchphrase] = useState('');
 
   return (
     <div className="main" style={{ backgroundImage: `url(${background})` }}>
@@ -28,13 +30,16 @@ export default function Main() {
           setShoe={setShoe}
           setShoeCount={setShoeCount}
         />
-        {/* <Catchphrase 
-
-        /> */}
+        <Catchphrase 
+          setCatchphrase={setCatchphrases}
+          currentCatchphrase={currentCatchphrase}
+          setCurrentCatchphrase={setCurrentCatchphrase}
+        />
         <Display
           topCount={topCount}
           bottomCount={bottomCount}
           shoeCount={shoeCount}
+          catchphrases={catchphrases}
         />
       </div>
       <Character top={top} bottom={bottom} shoe={shoe} />
