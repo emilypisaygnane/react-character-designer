@@ -9,6 +9,9 @@ export default function Controls({
   setBottom,
   setBottomCount,
 
+  shoe,
+  setShoe,
+  setShoeCount
 
 }) {
   return (
@@ -22,9 +25,9 @@ export default function Controls({
           setTopCount((prevState) => prevState + 1);
         }}
       >
-        <option default value="asymmetrical-top">Black Asymmetrical</option>
-        <option default value="coral-top">Coral Halterneck</option>
-        <option default value="olive-top">Olive Bustier</option>
+        <option value="asymmetrical">Black Asymmetrical</option>
+        <option value="coral">Coral Halterneck</option>
+        <option value="olive">Olive Bustier</option>
       </select>
       <label>Bottoms</label>
       <select 
@@ -42,8 +45,8 @@ export default function Controls({
       <select
         value={shoe} 
         onChange={(e) => {
-          setTop(e.target.value);
-          setTopCount((prevState) => prevState + 1);
+          setShoe(e.target.value);
+          setShoeCount((prevState) => prevState + 1);
         }}
       >
         <option default value="cowgirl-shoe">Cowgirl Boot</option>

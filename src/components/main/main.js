@@ -1,13 +1,13 @@
-import '..Main/main.css';
+import './main.css';
 import { useState } from 'react';
-import Display from '../display/display';
+import Display from '../Display/display';
 import Character from '../Character/character';
-import background from '../background/background.png';
+import background from '../../background.png';
 import Controls from '../Control/control';
-import Catchphrase from '../catchphrase/catchphrase';
+import Catchphrase from '../Catchphrase/catchphrase';
 
 export default function Main() {
-  const [top, setTop] = useState('');
+  const [top, setTop] = useState('asymmetrical');
   const [topCount, setTopCount] = useState(0);
   const [bottom, setBottom] = useState('');
   const [bottomCount, setBottomCount] = useState(0);
