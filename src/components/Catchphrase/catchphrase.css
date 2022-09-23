@@ -1,0 +1,10 @@
+.catchphrase {
+    grid-area: Catchphrase;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+  
+  .catchphrase label {
+    margin-bottom: 10px;
+  }

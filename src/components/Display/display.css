@@ -1,0 +1,14 @@
+.display {
+    grid-area: Display;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+  
+  .display h3 {
+    text-decoration: underline;
+  }
+  
+  .display ul {
+    margin-bottom: 45px;
+  }
