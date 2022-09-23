@@ -1,4 +1,4 @@
-import './control.js';
+import './control.css';
 
 export default function Controls({
   top,

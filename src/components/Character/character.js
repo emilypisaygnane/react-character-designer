@@ -1,3 +1,5 @@
+import '../Character/character.css';
+
 export default function Character({ top, bottom, shoe }) {
 
   return ( 
